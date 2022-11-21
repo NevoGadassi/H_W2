@@ -6,7 +6,6 @@ void inputmatrix(int arr[10][10]){
 //takr data from the clain
    for(int i = 0; i < 10; i++){
       for(int j = 0; j < 10; j++){
-        printf("enter num for (%d,%d)",%i %j);
          scanf("%d", &arr[i][j]);
          }
     }
