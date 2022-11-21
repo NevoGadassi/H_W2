@@ -43,7 +43,7 @@ int isroad(int arr[10][10]){
   if(i == j){
     return 0;
     }
-  if(arr[i][j] < 3500){
+  if(arr[i][j] < 3000){
     return 1;
   }
   return 0;
@@ -56,7 +56,7 @@ int shortroad(int arr[10][10]){
   if(i == j){
     return -1;
     }
-  else if(arr[i][j] < 3500){
+  else if(arr[i][j] < 3000){
     return arr[i][j];
     }
   return -1;
