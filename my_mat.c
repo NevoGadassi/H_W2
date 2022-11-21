@@ -6,6 +6,7 @@ void inputmatrix(int arr[10][10]){
 //takr data from the clain
    for(int i = 0; i < 10; i++){
       for(int j = 0; j < 10; j++){
+        printf("enter num for (%d,%d)",%i %j);
          scanf("%d", &arr[i][j]);
          }
     }
@@ -15,7 +16,7 @@ void inputmatrix(int arr[10][10]){
       for (int j = 0; j < 10; j++) {
          if(arr[i][j] == 0){
             if(i != j){
-               arr[i][j] = (int)(INT_MAX);
+               arr[i][j] = (int)(INT_MAX)/3;
                     }
                 }
             }
@@ -42,7 +43,7 @@ int isroad(int arr[10][10]){
   if(i == j){
     return 0;
     }
-  if(arr[i][j] < (INT_MAX)){
+  if(arr[i][j] < 3500){
     return 1;
   }
   return 0;
@@ -55,7 +56,7 @@ int shortroad(int arr[10][10]){
   if(i == j){
     return -1;
     }
-  else if(arr[i][j] < (INT_MAX)){
+  else if(arr[i][j] < 3500){
     return arr[i][j];
     }
   return -1;
