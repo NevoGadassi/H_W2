@@ -30,7 +30,7 @@ int main(int argc, char **argv)
         break;
     case 'C':
          int answer = shortroad(arr);
-       printf("%d", answer);
+       printf("%d", choose);
        printf("\n");
        scanf(" %c", &choose);
        break;
