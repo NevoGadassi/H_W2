@@ -5,35 +5,32 @@
 
 int main(int argc, char **argv)
 {
-   char choose;
+      char choose;
    int arr[10][10];
    scanf("%c", &choose);
    while(choose != 'D'){
-    switch (choose)
-    {
-    case 'A':
-        inputmatrix(arr);
+     if(choose == 'A'){
+       inputmatrix(arr);
        scanf(" %c", &choose);
-        break;
-    
-    case 'B':
-        int ans = isroad(arr);
-       if(ans == 1){
-         printf("True");
+     }
+     if(choose == 'B'){
+       int answer = isroad(arr);
+       if(answer == 1){
+         printf("%s", "True");
          printf("\n");
        }
-        else if(ans == 0){
-         printf("False");
+       else if(answer == 0){
+         printf("%s", "False");
          printf("\n");
-        }
+       }
        scanf(" %c", &choose);
-        break;
-    case 'C':
-         int answer = shortroad(arr);
-       printf("%d", choose);
+     }
+     if(choose == 'C'){
+       int answer = shortroad(arr);
+       printf("%d", answer);
        printf("\n");
        scanf(" %c", &choose);
-       break;
-    }
+     }
    }
+   return 0;
 }
