@@ -2,9 +2,11 @@
 #include "my_mat.h"
 #include <limits.h>
 
+
+
 int main(int argc, char **argv)
 {
-      char choose;
+    char choose;
    int arr[10][10];
    scanf("%c", &choose);
    while(choose != 'D'){
@@ -32,4 +34,5 @@ int main(int argc, char **argv)
      }
    }
    return 0;
+   
 }
